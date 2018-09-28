@@ -1,0 +1,1820 @@
+{
+	"debug": true,
+	"process": {
+		"file_limit": 1000000,
+		"core_limit": 1000000000
+	},
+	"log": {
+		"path": "/home/ubuntu/Exchange/matchengine/matchengine",
+		"flag": "fatal,error,warn,info,debug,trace",
+		"num": 10
+	},
+	"alert": {
+		"host": "matchengine",
+		"addr": "127.0.0.1:4444"
+	},
+	"svr": {
+		"bind": [
+			"tcp@0.0.0.0:7316",
+			"udp@0.0.0.0:7316"
+		],
+		"buf_limit": 100,
+		"max_pkg_size": 10240,
+		"heartbeat_check": false
+	},
+	"cli": "tcp@127.0.0.1:7317",
+	"db_log": {
+		"host": "35.154.200.130",
+		"user": "admin",
+		"pass": "password",
+		"name": "trade_log"
+	},
+	"db_history": {
+		"host": "35.154.200.130",
+		"user": "admin",
+		"pass": "password",
+		"name": "trade_history"
+	},
+	"assets": [{
+		"name": "BCH",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+		"name": "BTC",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+		"name": "LTC",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+		"name": "ETH",
+		"prec_save": 20,
+		"prec_show": 8
+	},{
+        "name": "USDT",
+		"prec_save": 20,
+		"prec_show": 8
+	},  {
+		"name": "ETC",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+		"name": "ZEC",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+		"name": "XMR",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+		"name": "DASH",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "PPT",
+		"prec_save": 20,
+		"prec_show": 8
+	},{
+        "name": "ADA",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "IOTA",
+		"prec_save": 20,
+		"prec_show": 8
+	},{
+      "name": "TRX",
+		"prec_save": 20,
+		"prec_show": 8
+	},{
+        "name": "NEO",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "BNB",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "VET",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "XEM",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "XTZ",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "DOGE",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "OMG",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "LSK",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "ONT",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "BCN",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "QTUM",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "ZRX",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "NANO",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "BTG",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "DGB",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "DCR",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "ICX",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "ZIL",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "BTS",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "MKR",
+		"prec_save": 20,
+		"prec_show": 8
+	},{
+        "name": "AE",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "STEEM",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "SC",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "XVG",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "BAT",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "REP",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "WAVES",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "BTM",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "NPXS",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "BCD",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "WTC",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "GNT",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "ETP",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "STRAT",
+		"prec_save": 20,
+		"prec_show": 8
+	}, {
+        "name": "NKC",
+		"prec_save": 20,
+		"prec_show": 8
+	}
+],
+	"markets": [{
+		"name": "BCHBTC",
+		"stock": {
+			"name": "BCH",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "LTCBTC",
+		"stock": {
+			"name": "LTC",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ETHBTC",
+		"stock": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	},{
+        "name": "USDTBTC",
+        "stock": {
+            "name": "USDT",
+            "prec": 8
+        },
+        "money": {
+            "name": "BTC",
+            "prec": 8
+        },
+        "min_amount": "0.001"
+    }, {
+		"name": "ETCBTC",
+		"stock": {
+			"name": "ETC",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ZECBTC",
+		"stock": {
+			"name": "ZEC",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "XMRBTC",
+		"stock": {
+			"name": "XMR",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "DASHBTC",
+		"stock": {
+			"name": "DASH",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "PPTBTC",
+		"stock": {
+			"name": "PPT",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ADABTC",
+		"stock": {
+			"name": "ADA",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "IOTABTC",
+		"stock": {
+			"name": "IOTA",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "TRXBTC",
+		"stock": {
+			"name": "TRX",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "NEOBTC",
+		"stock": {
+			"name": "NEO",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BNBBTC",
+		"stock": {
+			"name": "BNB",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "VETBTC",
+		"stock": {
+			"name": "VET",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "VETBTC",
+		"stock": {
+			"name": "VET",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "XEMBTC",
+		"stock": {
+			"name": "XEM",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "XTZBTC",
+		"stock": {
+			"name": "XTZ",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "DOGEBTC",
+		"stock": {
+			"name": "DOGE",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "OMGBTC",
+		"stock": {
+			"name": "OMG",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "LSKBTC",
+		"stock": {
+			"name": "LSK",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ONTBTC",
+		"stock": {
+			"name": "ONT",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BCNBTC",
+		"stock": {
+			"name": "BCN",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "QTUMBTC",
+		"stock": {
+			"name": "QTUM",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ZRXBTC",
+		"stock": {
+			"name": "ZRX",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "NANOBTC",
+		"stock": {
+			"name": "NANO",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BTGBTC",
+		"stock": {
+			"name": "BTG",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "DGBBTC",
+		"stock": {
+			"name": "DGB",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "DCRBTC",
+		"stock": {
+			"name": "DCR",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ICXBTC",
+		"stock": {
+			"name": "ICX",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ZILBTC",
+		"stock": {
+			"name": "ZIL",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BTSBTC",
+		"stock": {
+			"name": "BTS",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "MKRBTC",
+		"stock": {
+			"name": "MKR",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "AEBTC",
+		"stock": {
+			"name": "AE",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "STEEMBTC",
+		"stock": {
+			"name": "STEEM",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "SCBTC",
+		"stock": {
+			"name": "SC",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "XVGBTC",
+		"stock": {
+			"name": "XVG",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BATBTC",
+		"stock": {
+			"name": "BAT",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "REPBTC",
+		"stock": {
+			"name": "REP",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "WAVESBTC",
+		"stock": {
+			"name": "WAVES",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BTMBTC",
+		"stock": {
+			"name": "BTM",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "NPXSBTC",
+		"stock": {
+			"name": "NPXS",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BCDBTC",
+		"stock": {
+			"name": "BCD",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "WTCBTC",
+		"stock": {
+			"name": "WTC",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "GNTBTC",
+		"stock": {
+			"name": "GNT",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"	
+	}, {
+		"name": "ETPBTC",
+		"stock": {
+			"name": "ETP",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "STRATBTC",
+		"stock": {
+			"name": "STRAT",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "NKCBTC",
+		"stock": {
+			"name": "NKC",
+			"prec": 8
+		},
+		"money": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	},{
+		"name": "BCHETH",
+		"stock": {
+			"name": "BCH",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "LTCETH",
+		"stock": {
+			"name": "LTC",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BTCETH",
+		"stock": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	},{
+        "name": "USDTETH",
+        "stock": {
+            "name": "USDT",
+            "prec": 8
+        },
+        "money": {
+            "name": "ETH",
+            "prec": 8
+        },
+        "min_amount": "0.001"
+    }, {
+		"name": "ETCETH",
+		"stock": {
+			"name": "ETC",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ZECETH",
+		"stock": {
+			"name": "ZEC",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "XMRETH",
+		"stock": {
+			"name": "XMR",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "DASHETH",
+		"stock": {
+			"name": "DASH",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "PPTETH",
+		"stock": {
+			"name": "PPT",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ADAETH",
+		"stock": {
+			"name": "ADA",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "IOTAETH",
+		"stock": {
+			"name": "IOTA",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "TRXETH",
+		"stock": {
+			"name": "TRX",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "NEOETH",
+		"stock": {
+			"name": "NEO",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BNBETH",
+		"stock": {
+			"name": "BNB",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "VETETH",
+		"stock": {
+			"name": "VET",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "VETETH",
+		"stock": {
+			"name": "VET",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "XEMETH",
+		"stock": {
+			"name": "XEM",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "XTZETH",
+		"stock": {
+			"name": "XTZ",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "DOGEETH",
+		"stock": {
+			"name": "DOGE",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "OMGETH",
+		"stock": {
+			"name": "OMG",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "LSKETH",
+		"stock": {
+			"name": "LSK",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ONTETH",
+		"stock": {
+			"name": "ONT",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BCNETH",
+		"stock": {
+			"name": "BCN",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "QTUMETH",
+		"stock": {
+			"name": "QTUM",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ZRXETH",
+		"stock": {
+			"name": "ZRX",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "NANOETH",
+		"stock": {
+			"name": "NANO",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BTGETH",
+		"stock": {
+			"name": "BTG",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "DGBETH",
+		"stock": {
+			"name": "DGB",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "DCRETH",
+		"stock": {
+			"name": "DCR",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ICXETH",
+		"stock": {
+			"name": "ICX",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ZILETH",
+		"stock": {
+			"name": "ZIL",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BTSETH",
+		"stock": {
+			"name": "BTS",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "MKRETH",
+		"stock": {
+			"name": "MKR",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "AEETH",
+		"stock": {
+			"name": "AE",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "STEEMETH",
+		"stock": {
+			"name": "STEEM",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "SCETH",
+		"stock": {
+			"name": "SC",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "XVGETH",
+		"stock": {
+			"name": "XVG",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BATETH",
+		"stock": {
+			"name": "BAT",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "REPETH",
+		"stock": {
+			"name": "REP",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "WAVESETH",
+		"stock": {
+			"name": "WAVES",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BTMETH",
+		"stock": {
+			"name": "BTM",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "NPXSETH",
+		"stock": {
+			"name": "NPXS",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BCDETH",
+		"stock": {
+			"name": "BCD",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "WTCETH",
+		"stock": {
+			"name": "WTC",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "GNTETH",
+		"stock": {
+			"name": "GNT",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"	
+	}, {
+		"name": "ETPETH",
+		"stock": {
+			"name": "ETP",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "STRATETH",
+		"stock": {
+			"name": "STRAT",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "NKCETH",
+		"stock": {
+			"name": "NKC",
+			"prec": 8
+		},
+		"money": {
+			"name": "ETH",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	},{
+		"name": "BCHUSDT",
+		"stock": {
+			"name": "BCH",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "LTCUSDT",
+		"stock": {
+			"name": "LTC",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BTCUSDT",
+		"stock": {
+			"name": "BTC",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	},{
+        "name": "ETHUSDT",
+        "stock": {
+            "name": "ETH",
+            "prec": 8
+        },
+        "money": {
+            "name": "USDT",
+            "prec": 8
+        },
+        "min_amount": "0.001"
+    }, {
+		"name": "ETCUSDT",
+		"stock": {
+			"name": "ETC",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ZECUSDT",
+		"stock": {
+			"name": "ZEC",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "XMRUSDT",
+		"stock": {
+			"name": "XMR",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "DASHUSDT",
+		"stock": {
+			"name": "DASH",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "PPTUSDT",
+		"stock": {
+			"name": "PPT",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ADAUSDT",
+		"stock": {
+			"name": "ADA",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "IOTAUSDT",
+		"stock": {
+			"name": "IOTA",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "TRXUSDT",
+		"stock": {
+			"name": "TRX",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "NEOUSDT",
+		"stock": {
+			"name": "NEO",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BNBUSDT",
+		"stock": {
+			"name": "BNB",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "VETUSDT",
+		"stock": {
+			"name": "VET",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "VETUSDT",
+		"stock": {
+			"name": "VET",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "XEMUSDT",
+		"stock": {
+			"name": "XEM",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "XTZUSDT",
+		"stock": {
+			"name": "XTZ",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "DOGEUSDT",
+		"stock": {
+			"name": "DOGE",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "OMGUSDT",
+		"stock": {
+			"name": "OMG",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "LSKUSDT",
+		"stock": {
+			"name": "LSK",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ONTUSDT",
+		"stock": {
+			"name": "ONT",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BCNUSDT",
+		"stock": {
+			"name": "BCN",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "QTUMUSDT",
+		"stock": {
+			"name": "QTUM",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ZRXUSDT",
+		"stock": {
+			"name": "ZRX",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "NANOUSDT",
+		"stock": {
+			"name": "NANO",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BTGUSDT",
+		"stock": {
+			"name": "BTG",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "DGBUSDT",
+		"stock": {
+			"name": "DGB",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "DCRUSDT",
+		"stock": {
+			"name": "DCR",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ICXUSDT",
+		"stock": {
+			"name": "ICX",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "ZILUSDT",
+		"stock": {
+			"name": "ZIL",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BTSUSDT",
+		"stock": {
+			"name": "BTS",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "MKRUSDT",
+		"stock": {
+			"name": "MKR",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "AEUSDT",
+		"stock": {
+			"name": "AE",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "STEEMUSDT",
+		"stock": {
+			"name": "STEEM",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "SCUSDT",
+		"stock": {
+			"name": "SC",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "XVGUSDT",
+		"stock": {
+			"name": "XVG",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BATUSDT",
+		"stock": {
+			"name": "BAT",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "REPUSDT",
+		"stock": {
+			"name": "REP",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "WAVESUSDT",
+		"stock": {
+			"name": "WAVES",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BTMUSDT",
+		"stock": {
+			"name": "BTM",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "NPXSUSDT",
+		"stock": {
+			"name": "NPXS",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "BCDUSDT",
+		"stock": {
+			"name": "BCD",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "WTCUSDT",
+		"stock": {
+			"name": "WTC",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "GNTUSDT",
+		"stock": {
+			"name": "GNT",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"	
+	}, {
+		"name": "ETPUSDT",
+		"stock": {
+			"name": "ETP",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "STRATUSDT",
+		"stock": {
+			"name": "STRAT",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}, {
+		"name": "NKCUSDT",
+		"stock": {
+			"name": "NKC",
+			"prec": 8
+		},
+		"money": {
+			"name": "USDT",
+			"prec": 8
+		},
+		"min_amount": "0.001"
+	}],
+	"brokers": "127.0.0.1:9092",
+	"slice_interval": 3600,
+	"slice_keeptime": 259200
+}
