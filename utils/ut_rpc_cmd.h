@@ -14,6 +14,7 @@
 # define CMD_ASSET_SUMMARY          105
 # define CMD_ASSET_ADD              106
 # define CMD_ASSET_DELETE           107
+# define CMD_BALANCE_DETAILS        108
 
 // trade
 # define CMD_ORDER_PUT_LIMIT        201
